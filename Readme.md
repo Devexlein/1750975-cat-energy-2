@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Людмила Скрипкина](https://up.htmlacademy.ru/adaptive-individual/2/user/1750975).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+
 
 ---
 
