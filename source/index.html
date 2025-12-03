@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,11 +18,11 @@
   <header class="page__header main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
       <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-desktop-image.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet-image.svg" width="60" height="50" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-mobile-image.svg" width="33" height="38" alt="Логотип">
+        <source media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
-      <img class="logo__text" src="/images/logo-mobile-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
+      <img class="logo__text" src="/images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -45,9 +49,9 @@
         <h2 class="hero__title section-title section-title--light">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <source srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x" type="image/webp">
-          <source srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" type="image/jpeg">
-          <img class="hero__image" src="images/hero-image-1@1x.png" width="280" height="270" alt="Продукция Cat Energy PRO со вкусом курицы в стакане">
+          <source media="(min-width: 1440px)" srcset="images/hero/hero-image-desktop@1x.png 1x, images/hero/hero-image-desktop@2x.png 2x" width="552" height="499" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/hero/hero-image-tablet@1x.jpg 1x, images/hero/hero-image-tablet@2x.jpg 2x" width="709" height="609" type="image/jpeg">
+          <img class="hero__image" src="images/hero/hero-image-mobile@1x.png" srcset="images/hero/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Продукция Cat Energy PRO со вкусом курицы в стакане">
         </picture>
         <a class="hero__link-button button" href="#">Подобрать программу</a>
       </div>
@@ -105,14 +109,12 @@
       <div class="example__slider compare-slider">
         <div class="compare-slider__images-container">
           <picture>
-            <source srcset="images/вoris-before@1x.webp 1x, images/вoris-before@2x.webp 2x" type="image/webp">
-            <source srcset="images/вoris-before@1x.png 1x, images/вoris-before@2x.png 2x" type="image/png">
-            <img class="compare-slider__image" src="images/вoris-before@1x.png" width="280" height="256" alt="Толстый кот Борис до перехода на питание по профессиональной программе">
+            <source media="(min-width: 768px)" srcset="images/example-slider/вoris-before@1x.png 1x, images/example-slider/вoris-before@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="compare-slider__image" src="images/example-slider/вoris-before-mobile@1x.png" srcset="images/example-slider/вoris-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на питание по профессиональной программе">
           </picture>
           <picture>
-            <source srcset="images/вoris-after@1x.webp 1x, images/вoris-after@2x.webp 2x" type="image/webp">
-            <source srcset="images/вoris-after@1x.png 1x, images/вoris-after@2x.png 2x" type="image/png">
-            <img class="compare-slider__image" src="images/вoris-after@1x.png" width="280" height="256" alt="Стройный кот Борис после перехода на питание по профессиональной программе">
+            <source media="(min-width: 768px)" srcset="images/example-slider/вoris-after@1x.png 1x, images/example-slider/вoris-after@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="compare-slider__image" src="images/example-slider/вoris-after-mobile@1x.png" srcset="images/example-slider/вoris-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на питание по профессиональной программе">
           </picture>
         </div>
         <!-- Ползунок -->
@@ -135,9 +137,9 @@
         </p>
       </div>
       <picture class="address__map">
-        <source srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" type="image/webp">
-        <source srcset="images/map@1x.png 1x, images/map@2x.png 2x" type="image/png">
-        <img class="address__map-image" src="images/map-mobile@1x.png" width="320" height="362" alt="Магазин Cat Energy на карте города">
+        <source media="(min-width: 1440px)" srcset="images/map/map-bg-desktop@1x.jpg 1x, images/map/map-bg-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+        <source media="(min-width: 768px)" srcset="images/map/map-bg-tablet@1x.jpg 1x, images/map/map-bg-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+        <img class="address__map-image" src="images/map/map-bg-mobile@1x.png" srcset="images/map/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Магазин Cat Energy на карте города">
       </picture>
     </section>
     <div class="main-footer__wrap">
