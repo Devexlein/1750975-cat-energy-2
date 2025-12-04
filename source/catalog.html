@@ -42,7 +42,7 @@
     </nav>
   </header>
   <!-- Каталог магазина -->
-  <main class="catalog">
+  <main class="page__main catalog">
     <h1 class="catalog__title section-title">Каталог продукции</h1>
     <!-- Каталог основной продукции -->
     <section class="catalog__main-content main-catalog">
@@ -248,7 +248,7 @@
     </section>
   </main>
   <!-- Футер -->
-  <footer class="main-footer">
+  <footer class="page__footer main-footer">
     <section class="main-footer__address address">
       <h2 class="visually-hidden">Адрес магазина</h2>
       <div class="address__content-wrap">
@@ -258,11 +258,13 @@
           <span class="address__location-city">Санкт&#8209;Петербург</span>
         </p>
       </div>
-      <picture class="address__map">
-        <source media="(min-width: 1440px)" srcset="images/map/map-bg-desktop@1x.jpg 1x, images/map/map-bg-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
-        <source media="(min-width: 768px)" srcset="images/map/map-bg-tablet@1x.jpg 1x, images/map/map-bg-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-        <img class="address__map-image" src="images/map/map-bg-mobile@1x.png" srcset="images/map/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Магазин Cat Energy на карте города">
-      </picture>
+      <div class="address__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-bg-desktop@1x.jpg 1x, images/map/map-bg-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+          <source media="(min-width: 768px)" srcset="images/map/map-bg-tablet@1x.jpg 1x, images/map/map-bg-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+          <img class="address__map-image" src="images/map/map-bg-mobile@1x.png" srcset="images/map/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Магазин Cat Energy на карте города">
+        </picture>
+      </div>
     </section>
     <div class="main-footer__wrap">
       <a class="main-footer__logo logo" href="index.html">

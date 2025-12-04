@@ -42,7 +42,7 @@
     </nav>
   </header>
   <!-- Главная страница сайта -->
-  <main class="main-index">
+  <main class="page__main main-index">
     <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
     <section class="hero">
       <div class="content-wrapper">
@@ -109,12 +109,12 @@
       <div class="example__slider compare-slider">
         <div class="compare-slider__images-container">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/example-slider/вoris-before@1x.png 1x, images/example-slider/вoris-before@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="compare-slider__image" src="images/example-slider/вoris-before-mobile@1x.png" srcset="images/example-slider/вoris-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на питание по профессиональной программе">
+            <source media="(min-width: 768px)" srcset="images/example-slider/boris-before@1x.png 1x, images/example-slider/boris-before@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="compare-slider__image" src="images/example-slider/boris-before-mobile@1x.png" srcset="images/example-slider/boris-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на питание по профессиональной программе">
           </picture>
           <picture>
-            <source media="(min-width: 768px)" srcset="images/example-slider/вoris-after@1x.png 1x, images/example-slider/вoris-after@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="compare-slider__image" src="images/example-slider/вoris-after-mobile@1x.png" srcset="images/example-slider/вoris-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на питание по профессиональной программе">
+            <source media="(min-width: 768px)" srcset="images/example-slider/boris-after@1x.png 1x, images/example-slider/boris-after@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="compare-slider__image" src="images/example-slider/boris-after-mobile@1x.png" srcset="images/example-slider/boris-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на питание по профессиональной программе">
           </picture>
         </div>
         <!-- Ползунок -->
@@ -126,7 +126,7 @@
     </section>
   </main>
   <!-- Футер -->
-  <footer class="main-footer">
+  <footer class="page__footer main-footer">
     <section class="main-footer__address address">
       <h2 class="visually-hidden">Адрес магазина</h2>
       <div class="address__content-wrap">
@@ -136,11 +136,13 @@
           <span class="address__location-city">Санкт&#8209;Петербург</span>
         </p>
       </div>
-      <picture class="address__map">
-        <source media="(min-width: 1440px)" srcset="images/map/map-bg-desktop@1x.jpg 1x, images/map/map-bg-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
-        <source media="(min-width: 768px)" srcset="images/map/map-bg-tablet@1x.jpg 1x, images/map/map-bg-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-        <img class="address__map-image" src="images/map/map-bg-mobile@1x.png" srcset="images/map/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Магазин Cat Energy на карте города">
-      </picture>
+      <div class="address__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-bg-desktop@1x.jpg 1x, images/map/map-bg-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+          <source media="(min-width: 768px)" srcset="images/map/map-bg-tablet@1x.jpg 1x, images/map/map-bg-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+          <img class="address__map-image" src="images/map/map-bg-mobile@1x.png" srcset="images/map/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Магазин Cat Energy на карте города">
+        </picture>
+      </div>
     </section>
     <div class="main-footer__wrap">
       <a class="main-footer__logo logo" href="index.html" aria-current="page">
