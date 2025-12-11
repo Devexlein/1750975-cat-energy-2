@@ -1,3 +1,13 @@
-// .infographic {}
-// .infographic__item {}
-// .infographic__number {}
+.infographic {
+  @include list-reset;
+}
+
+.infographic__item {
+  @include font-some-params($font-primary, 12px, 12px);
+}
+
+.infographic__number {
+  @include font-some-params($font-secondary, 24px, 24px);
+  color: $text-color-secondary;
+  font-weight: inherit;
+}

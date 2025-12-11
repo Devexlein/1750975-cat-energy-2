@@ -1,1 +1,6 @@
-// .box-title {}
+.box-title {
+  @include font-some-params($font-secondary, 24px, 37px);
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+}

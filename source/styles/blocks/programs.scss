@@ -1,3 +1,5 @@
 // .programs {}
-// .programs__list {}
+.programs__list {
+  @include list-reset;
+}
 // .programs__item {}

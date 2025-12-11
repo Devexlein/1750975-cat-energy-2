@@ -1,6 +1,18 @@
 // .additional-product {}
-// .additional-product__title {}
-// .additional-product__params {}
+.additional-product__title {
+  @include font-some-params($font-secondary, 16px, 16px);
+  text-transform: uppercase;
+  font-weight: inherit;
+  color: $text-color-secondary-light;
+}
+
+.additional-product__params {
+  @include font-some-params($font-primary, 14px, 14px);
+
+  & b {
+    font-weight: inherit;
+  }
+}
 // .additional-product__unit {}
 // .additional-product__price {}
 // .additional-product__order {}

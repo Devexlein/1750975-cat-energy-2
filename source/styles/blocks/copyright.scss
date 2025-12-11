@@ -1,2 +1,6 @@
 // .copyright {}
-// .copyright__link {}
+.copyright__link {
+  @include font-some-params($font-primary, 16px, 20px);
+  color: inherit;
+  text-decoration: none;
+}

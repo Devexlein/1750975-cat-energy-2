@@ -1,7 +1,16 @@
-// .example {}
+.example {
+  background-color: $bg-color-secondary-darken;
+}
 // .example__title {}
 // .example__description {}
 // .example__infographic {}
-// .example__expenses {}
-// .example__sum {}
+.example__expenses {
+  @include font-some-params($font-secondary, 14px, 20px);
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}
+
+.example__sum {
+  font-weight: inherit;
+}
 // .example__slider {}

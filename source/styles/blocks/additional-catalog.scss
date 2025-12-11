@@ -1,5 +1,7 @@
 // .additional-catalog {}
 // .additional-catalog__title {}
-// .additional-catalog__list {}
+.additional-catalog__list {
+  @include list-reset;
+}
 // .additional-catalog__item {}
 // .additional-catalog__promo {}

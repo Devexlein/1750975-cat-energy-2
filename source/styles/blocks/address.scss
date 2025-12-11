@@ -1,6 +1,15 @@
 // .address {}
-// .address__content-wrap {}
-// .address__text {}
+.address__content-wrap {
+  &--bg-primary {
+    background-color: $bg-color-primary;
+  }
+}
+
+.address__text {
+  @include font-some-params($font-secondary, 16px, 20px);
+  color: $text-color-secondary-lighter;
+  text-transform: uppercase;
+}
 // .address__location {}
 // .address__location-street {}
 // .address__location-city {}

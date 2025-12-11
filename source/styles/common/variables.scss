@@ -1,1 +1,17 @@
 /* здесь используйте глобальные переменные */
+$font-primary: "Lato", "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
+
+$text-color-primary: #444444;
+$text-color-secondary: #000000;
+$text-color-secondary-lighter: #111111;
+$text-color-secondary-light: #222222;
+$text-color-basis: #ffffff;
+
+$bg-color-primary: #ffffff;
+$bg-color-secondary: #f2f2f2;
+$bg-color-secondary-darken: #eaeaea;
+$bg-color-basis: #68b738;
+$bg-color-basis-rgba85: rgba($bg-color-basis, 0.85);
+
+$border-color-basis: #cdcdcd;

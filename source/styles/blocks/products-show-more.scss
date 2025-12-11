@@ -1,4 +1,11 @@
 // .products-show-more {}
-// .products-show-more__title {}
-// .products-show-more__description {}
+.products-show-more__title {
+  @include font-some-params($font-secondary, 16px, 20px);
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+
+.products-show-more__description {
+  @include font-some-params($font-primary, 12px, 16px);
+}
 // .products-show-more__button {}
