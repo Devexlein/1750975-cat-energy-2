@@ -1,0 +1,6 @@
+// .manual {}
+// .manual__title {}
+.manual__list {
+  @include list-reset;
+}
+// .manual__item {}

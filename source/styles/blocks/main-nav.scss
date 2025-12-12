@@ -1,0 +1,10 @@
+// .main-nav {}
+// .main-nav__toggle {}
+.main-nav__list {
+  @include list-reset;
+}
+// .main-nav__item {}
+.main-nav__link {
+  @include link;
+  @include font-some-params($font-secondary, 20px, 20px);
+}

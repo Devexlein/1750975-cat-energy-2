@@ -1,0 +1,13 @@
+.button {
+  @include font-some-params($font-secondary, 16px, 20px);
+  @include button;
+
+  &--secondary {
+    color: $text-color-primary;
+    background: $bg-color-secondary;
+  }
+
+  &--big {
+    @include font-some-params($font-secondary, 20px, 26px);
+  }
+}

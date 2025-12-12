@@ -1,0 +1,13 @@
+// .additional-product {}
+.additional-product__title {
+  @include font-some-params($font-secondary, 16px, 16px);
+  text-transform: uppercase;
+  color: $text-color-secondary-light;
+}
+
+.additional-product__params {
+  @include font-some-params($font-primary, 14px, 14px);
+}
+// .additional-product__unit {}
+// .additional-product__price {}
+// .additional-product__order {}

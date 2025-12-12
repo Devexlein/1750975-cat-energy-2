@@ -1,0 +1,17 @@
+.hero {
+  color: $text-color-basis;
+  text-align: center;
+}
+
+.hero__title {
+  color: inherit;
+}
+
+.hero__slogan {
+  @include font-some-params($font-secondary, 14px, 14px);
+  text-transform: uppercase;
+}
+// .hero__image  {}
+.hero__link-button {
+  display: inline-block;
+}

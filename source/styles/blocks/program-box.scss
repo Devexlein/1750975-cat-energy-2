@@ -1,0 +1,9 @@
+.program-box {
+  background-color: $bg-color-secondary;
+}
+// .program-box__title {}
+// .program-box__description {}
+.program-box__link {
+  @include link;
+  @include font-some-params($font-secondary, 16px, 16px);
+}

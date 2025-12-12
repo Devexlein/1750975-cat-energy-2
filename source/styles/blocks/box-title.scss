@@ -1,0 +1,5 @@
+.box-title {
+  @include font-some-params($font-secondary, 24px, 37px);
+  text-transform: uppercase;
+  color: $text-color-secondary;
+}

@@ -1,0 +1,7 @@
+// .newsletter {}
+// .newsletter__title {}
+.newsletter__description {
+  @include font-some-params($font-secondary, 16px, 24px);
+  color: $text-color-secondary;
+}
+// .newsletter__form {}
