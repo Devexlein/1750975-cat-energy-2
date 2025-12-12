@@ -8,6 +8,12 @@
   }
 }
 
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @mixin font-some-params($family: $font-primary, $font-size: 14px, $line-height: 18px, $font-weight: inherit) {
   font-family: $family;
   font-size: $font-size;
@@ -15,13 +21,8 @@
   font-weight: $font-weight;
 }
 
-@mixin list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 @mixin button {
+  display: block;
   color: $text-color-basis;
   text-align: center;
   text-transform: uppercase;

@@ -1,17 +1,6 @@
 .hero {
   color: $text-color-basis;
   text-align: center;
-  // background: linear-gradient($bg-color-basis-rgba85 63%, $bg-color-primary 63%);
-  background-image:
-    image-set(
-      url("../../images/hero/hero-bg-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/hero/hero-bg-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/hero/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
-      url("../../images/hero/hero-bg-mobile@1x.jpg") type("image/jpg") 1x
-    );
-  background-repeat: no-repeat;
-  background-size: cover 63%;
-  background-position: top;
 }
 
 .hero__title {

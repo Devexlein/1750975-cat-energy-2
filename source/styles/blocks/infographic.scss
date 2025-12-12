@@ -1,6 +1,4 @@
-.infographic {
-  @include list-reset;
-}
+// .infographic {}
 
 .infographic__item {
   @include font-some-params($font-primary, 12px, 12px);

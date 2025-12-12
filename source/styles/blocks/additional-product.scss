@@ -7,10 +7,6 @@
 
 .additional-product__params {
   @include font-some-params($font-primary, 14px, 14px);
-
-  & b {
-    font-weight: inherit;
-  }
 }
 // .additional-product__unit {}
 // .additional-product__price {}

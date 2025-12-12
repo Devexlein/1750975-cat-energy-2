@@ -1,7 +1,22 @@
 // .additional-catalog {}
 // .additional-catalog__title {}
+
 .additional-catalog__list {
   @include list-reset;
 }
 // .additional-catalog__item {}
-// .additional-catalog__promo {}
+
+.additional-catalog__promo {
+  @include font-some-params($font-primary, 16px, 20px);
+  color: $text-color-basis;
+  text-align: center;
+  background-image:
+    image-set(
+      url("../../images/additional-catalog/box-bg-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/additional-catalog/box-bg-mobile@1x.jpg") type("image/jpg") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $bg-color-basis;
+}

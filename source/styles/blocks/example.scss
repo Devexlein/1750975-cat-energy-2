@@ -3,7 +3,10 @@
 }
 // .example__title {}
 // .example__description {}
-// .example__infographic {}
+.example__infographic {
+  @include list-reset;
+}
+
 .example__expenses {
   @include font-some-params($font-secondary, 14px, 20px);
   color: $text-color-secondary;

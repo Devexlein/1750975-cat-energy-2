@@ -5,5 +5,7 @@
 // .main-footer__address {}
 // .main-footer__wrap {}
 // .main-footer__logo {}
-// .main-footer__social {}
+.main-footer__social {
+  @include list-reset;
+}
 // .main-footer__copyright {}
