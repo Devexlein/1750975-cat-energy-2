@@ -9,5 +9,5 @@
 .infographic__number {
   @include font-some-params($font-secondary, 24px, 24px);
   color: $text-color-secondary;
-  font-weight: inherit;
+  text-transform: uppercase;
 }

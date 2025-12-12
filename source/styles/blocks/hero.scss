@@ -1,7 +1,7 @@
 .hero {
   color: $text-color-basis;
   text-align: center;
-  background: linear-gradient($bg-color-basis-rgba85 63%, $bg-color-primary 63%);
+  // background: linear-gradient($bg-color-basis-rgba85 63%, $bg-color-primary 63%);
   background-image:
     image-set(
       url("../../images/hero/hero-bg-mobile@2x.webp") type("image/webp") 2x,

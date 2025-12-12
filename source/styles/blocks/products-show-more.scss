@@ -2,7 +2,6 @@
 .products-show-more__title {
   @include font-some-params($font-secondary, 16px, 20px);
   text-transform: uppercase;
-  font-weight: inherit;
 }
 
 .products-show-more__description {

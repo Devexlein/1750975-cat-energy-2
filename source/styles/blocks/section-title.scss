@@ -1,5 +1,4 @@
 .section-title {
   @include font-some-params($font-secondary, 36px, 36px);
   color: $text-color-secondary;
-  font-weight: inherit;
 }
