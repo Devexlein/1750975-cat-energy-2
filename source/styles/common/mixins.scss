@@ -1,10 +1,14 @@
-@mixin font-face($family, $weight, $style, $src) {
+@mixin font-face($family, $weight, $style, $src-woff2, $src-woff) {
   @font-face {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
-    src: $src format("woff2");
+    // src: $src format("woff2");
+    src:
+      local($family),
+      $src-woff2 format("woff2"),
+      $src-woff format("woff");
   }
 }
 
