@@ -1,6 +1,18 @@
-// .copyright {}
-.copyright__link {
+.copyright {
+  @include center-flex(space-between);
   @include font-some-params($font-primary, 16px, 20px);
   color: inherit;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: $bg-color-dark;
+    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+  }
 }

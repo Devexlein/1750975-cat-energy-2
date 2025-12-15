@@ -1,1 +1,27 @@
-// .quality-box {}
+.quality-box {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    @include bg-some-params;
+    background-size: 30px 32px;
+  }
+
+  &--leaf::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+  }
+
+  &--water::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+  }
+
+  &--cutlery::before {
+    background-image: url("../../icons/stack.svg#icon-cutlery");
+  }
+
+  &--scales::before {
+    background-image: url("../../icons/stack.svg#icon-scales");
+  }
+}

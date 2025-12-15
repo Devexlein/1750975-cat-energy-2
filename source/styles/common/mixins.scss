@@ -25,6 +25,12 @@
   font-weight: $font-weight;
 }
 
+@mixin bg-some-params($bg-color: $bg-color-basis, $bg-position: center, $bg-repeat: no-repeat) {
+  background-color: $bg-color;
+  background-position: $bg-position;
+  background-repeat: $bg-repeat;
+}
+
 @mixin button {
   display: block;
   color: $text-color-basis;
@@ -40,4 +46,11 @@
   color: $text-color-secondary;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@mixin center-flex($justify-content: center, $direction: row) {
+  justify-content: $justify-content;
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
 }

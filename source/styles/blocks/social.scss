@@ -1,3 +1,35 @@
-// .social {}
+.social {
+  @include center-flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 // .social__item {}
-// .social__link {}
+.social__link {
+  @include center-flex;
+  min-width: 28px;
+  min-height: 22px;
+  color: inherit;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $bg-color-dark;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 28px 22px;
+  }
+
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#icon-vk");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#icon-youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#icon-telegram");
+  }
+}

@@ -1,5 +1,18 @@
 // .main-nav {}
-// .main-nav__toggle {}
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#menu-burger");
+
+  @include bg-some-params($bg-color-primary);
+  background-size: 24px 24px;
+  border: none;
+
+  &--closed {
+    background-image: url("../../icons/stack.svg#menu-close");
+  }
+}
+
 .main-nav__list {
   @include list-reset;
 }

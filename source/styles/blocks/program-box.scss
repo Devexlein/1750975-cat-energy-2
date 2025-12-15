@@ -1,9 +1,43 @@
 .program-box {
-  background-color: $bg-color-secondary;
+  @include bg-some-params($bg-color-secondary, 20px 20px);
+  padding: 30px 30px 20px 20px;
+
+  &--slim {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-size: 50px 53px;
+  }
+
+  &--pro {
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-position: 10px 20px;
+    background-size: 67px 53px;
+  }
 }
-// .program-box__title {}
-// .program-box__description {}
+
+.program-box__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 70px;
+}
+
+.program-box__description {
+  margin: 0;
+}
+
 .program-box__link {
+  @include center-flex(space-between);
   @include link;
   @include font-some-params($font-secondary, 16px, 16px);
+  max-width: 139px;
+
+  &::after {
+    @include bg-some-params(transparent, right);
+    content: "";
+    margin-right: 10px;
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#arrow-right");
+    background-size: 32px 12px;
+  }
 }

@@ -1,4 +1,11 @@
-// .products-show-more {}
+.products-show-more {
+  @include bg-some-params(transparent, top 25px center);
+  padding: 78px 20px 25px;
+  text-align: center;
+  background-image: url("../../icons/stack.svg#icon-plus");
+  background-size: 30px 30px;
+}
+
 .products-show-more__title {
   @include font-some-params($font-secondary, 16px, 20px);
   text-transform: uppercase;
