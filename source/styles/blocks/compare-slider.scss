@@ -4,12 +4,13 @@
   position: relative;
   display: grid;
   place-content: center;
-  overflow: hidden;
+  width: max-content;
 }
 
 .compare-slider__images-container {
-  max-width: 280px;
-  max-height: 256px;
+  position: relative;
+  width: 280px;
+  height: 256px;
   aspect-ratio: 1/1;
 }
 
@@ -18,12 +19,13 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
-
+  overflow: hidden;
 
   &--before {
     position: absolute;
     inset: 0;
     width: var(--js-position);
+    background-color: $bg-color-secondary-darken;
   }
 }
 
@@ -33,7 +35,7 @@
   height: 100%;
   inset: 0;
   opacity: 0;
-  cursor: pointer;
+  cursor: ew-resize;
 }
 
 .compare-slider__control {
