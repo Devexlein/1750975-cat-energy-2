@@ -1,4 +1,8 @@
 .quality-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   &::before {
     content: "";
     display: block;
@@ -7,6 +11,7 @@
 
     @include bg-some-params;
     background-size: 30px 32px;
+    flex-shrink: 0;
   }
 
   &--leaf::before {
@@ -24,4 +29,8 @@
   &--scales::before {
     background-image: url("../../icons/stack.svg#icon-scales");
   }
+}
+
+.quality-box__description {
+  margin: 0;
 }

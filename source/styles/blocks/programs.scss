@@ -1,4 +1,7 @@
-// .programs {}
+.programs {
+  padding: 0 20px;
+}
+
 .programs__list {
   @include list-reset;
 }

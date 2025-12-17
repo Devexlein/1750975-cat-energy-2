@@ -14,5 +14,19 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 27px 34px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-color-basis;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    background-color: $bg-color-basis;
   }
 }

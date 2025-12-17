@@ -3,9 +3,33 @@
 }
 
 // .main-footer__address {}
-// .main-footer__wrap {}
-// .main-footer__logo {}
+.main-footer__wrap {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.main-footer__logo {
+  margin-bottom: 20px;
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
 .main-footer__social {
   @include list-reset;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
+
 // .main-footer__copyright {}

@@ -2,5 +2,7 @@
   height: 100%;
 }
 // .page__header {}
-// .page__main {}
+.page__main {
+  flex-grow: 1;
+}
 // .page__footer {}

@@ -7,6 +7,7 @@
 
 body {
   @include font-some-params;
+  margin: 0;
   font-weight: 400;
   font-style: normal;
   color: $text-color-primary;

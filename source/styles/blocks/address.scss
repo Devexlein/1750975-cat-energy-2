@@ -1,5 +1,9 @@
 // .address {}
 .address__content-wrap {
+  @include center-flex(space-between);
+  padding: 26px 15px;
+  gap: 15px;
+
   &--bg-primary {
     background-color: $bg-color-primary;
   }
@@ -7,10 +11,15 @@
 
 .address__text {
   @include font-some-params($font-secondary, 16px, 20px);
+  margin: 0;
   color: $text-color-secondary-lighter;
   text-transform: uppercase;
 }
-// .address__location {}
+
+.address__location {
+  margin: 0;
+  letter-spacing: -0.1px;
+}
 // .address__location-street {}
 // .address__location-city {}
 // .address__map {}

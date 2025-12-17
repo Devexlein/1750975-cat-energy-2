@@ -1,6 +1,17 @@
-// .manual {}
-// .manual__title {}
+.manual {
+  padding: 20px 20px 50px;
+}
+
+.manual__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .manual__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 // .manual__item {}

@@ -1,6 +1,8 @@
 .main-header {
+  position: relative;
+
   &--decor::after {
-    @include bg-some-params(center 0);
+    @include bg-some-params($bg-color-basis, center 0);
     content: "";
     position: absolute;
     width: 100%;
@@ -35,5 +37,28 @@
     }
   }
 }
-// .main-header__logo {}
+
+.main-header__content {
+  padding: 0 20px;
+}
+
+.main-header__logo {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  & .logo__text {
+    transform: translate(25%);
+  }
+}
 // .main-header__nav {}

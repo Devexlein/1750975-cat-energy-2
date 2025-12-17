@@ -1,6 +1,7 @@
 .program-box {
   @include bg-some-params($bg-color-secondary, 20px 20px);
-  padding: 30px 30px 20px 20px;
+  margin: 0 auto 20px;
+  padding: 30px 20px 20px;
 
   &--slim {
     background-image: url("../../icons/stack.svg#cat-slim");
@@ -22,13 +23,17 @@
 
 .program-box__description {
   margin: 0;
+  margin-bottom: 23px;
 }
 
 .program-box__link {
-  @include center-flex(space-between);
   @include link;
   @include font-some-params($font-secondary, 16px, 16px);
-  max-width: 139px;
+  padding: 4px 0;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
 
   &::after {
     @include bg-some-params(transparent, right);
@@ -39,5 +44,14 @@
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow-right");
     background-size: 32px 12px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

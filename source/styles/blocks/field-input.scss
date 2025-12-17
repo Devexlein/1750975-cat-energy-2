@@ -1,5 +1,7 @@
 .field-input {
   @include font-some-params($font-secondary, 20px, 30px);
+  padding: 12px;
+  width: 100%;
   color: inherit;
   text-transform: uppercase;
   border: 1px solid $border-color-basis;
