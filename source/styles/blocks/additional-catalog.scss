@@ -1,15 +1,29 @@
-// .additional-catalog {}
-// .additional-catalog__title {}
+.additional-catalog {
+  padding: 25px 20px 20px;
+}
+
+.additional-catalog__title {
+  margin: 0;
+  margin-bottom: 36px;
+}
 
 .additional-catalog__list {
   @include list-reset;
 }
-// .additional-catalog__item {}
+
+.additional-catalog__item {
+  border-top: 1px solid $border-color-basis;
+
+  &:last-child {
+    margin-bottom: 35px;
+    border-bottom: 1px solid $border-color-basis;
+  }
+}
 
 .additional-catalog__promo {
   @include font-some-params($font-primary, 16px, 20px);
   @include bg-some-params;
-  padding: 60px 60px 43px;
+  padding: 60px 50px 43px;
   color: $text-color-basis;
   text-align: center;
   background-image:

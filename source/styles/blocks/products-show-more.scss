@@ -4,14 +4,20 @@
   text-align: center;
   background-image: url("../../icons/stack.svg#icon-plus");
   background-size: 30px 30px;
+  border-top: 1px solid $bg-color-secondary-hover;
+  border-bottom: 1px solid $bg-color-secondary-hover;
 }
 
 .products-show-more__title {
   @include font-some-params($font-secondary, 16px, 20px);
+  margin: 0;
+  margin-bottom: 8px;
   text-transform: uppercase;
 }
 
 .products-show-more__description {
   @include font-some-params($font-primary, 12px, 16px);
+  margin: 0;
+  margin-bottom: 20px;
 }
 // .products-show-more__button {}

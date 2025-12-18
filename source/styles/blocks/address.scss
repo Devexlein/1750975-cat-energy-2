@@ -22,5 +22,16 @@
 }
 // .address__location-street {}
 // .address__location-city {}
-// .address__map {}
+.address__map {
+  width: 100%;
+  height: 362px;
+  background-image:
+    image-set(
+      url("../../images/map/map-bg-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/map/map-bg-mobile@1x.jpg") type("image/jpg") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 // .address__map-image {}
