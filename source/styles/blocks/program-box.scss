@@ -39,6 +39,7 @@
     @include bg-some-params(transparent, right);
     content: "";
     margin-right: 10px;
+    flex-shrink: 0;
     display: block;
     width: 24px;
     height: 12px;

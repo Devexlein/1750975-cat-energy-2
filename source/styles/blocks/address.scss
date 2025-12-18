@@ -33,5 +33,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: 500px) {
+    background-image:
+      image-set(
+        url("../../images/map/map-bg-tablet@2x.jpg") type("image/jpg") 2x,
+        url("../../images/map/map-bg-tablet@1x.jpg") type("image/jpg") 1x
+      );
+  }
 }
 // .address__map-image {}

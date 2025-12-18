@@ -7,6 +7,7 @@
   width: 40px;
   height: 40px;
   background-image: url("../../icons/stack.svg#menu-burger");
+  z-index: 2;
 
   @include bg-some-params($bg-color-primary);
   background-size: 24px 24px;

@@ -9,6 +9,7 @@
     display: block;
     width: 27px;
     height: 34px;
+    flex-shrink: 0;
     background-color: $bg-color-dark;
     mask-image: url("../../icons/stack.svg#logo-htmlacademy");
     mask-position: center;
