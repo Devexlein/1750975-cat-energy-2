@@ -9,6 +9,14 @@
 .product__title-link {
   @include link;
   grid-column: 2 / 3;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .product__title {
@@ -21,6 +29,15 @@
 .product__image-link {
   grid-column: 1 / 2;
   grid-row: 1 / span 2;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .product__specification-wrap {
