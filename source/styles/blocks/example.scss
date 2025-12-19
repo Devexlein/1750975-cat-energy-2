@@ -1,19 +1,36 @@
 .example {
+  padding: 25px 20px 40px;
   background-color: $bg-color-secondary-darken;
 }
-// .example__title {}
-// .example__description {}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .example__infographic {
   @include list-reset;
+  margin-bottom: 35px;
 }
 
 .example__expenses {
   @include font-some-params($font-secondary, 14px, 20px);
+  margin: 0;
+  margin-bottom: 20px;
   color: $text-color-secondary;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__sum {
   font-weight: inherit;
 }
-// .example__slider {}
+
+.example__slider {
+  margin: 0 auto;
+}

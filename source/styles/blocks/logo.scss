@@ -1,5 +1,15 @@
 .logo {
   text-decoration: none;
+  transition: opacity, fill 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 // .logo__image {}
 // .logo__text {}

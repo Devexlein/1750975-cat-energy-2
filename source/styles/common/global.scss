@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  @include font-some-params;
-  font-weight: 400;
-  font-style: normal;
-  color: $text-color-primary;
-  background-color: $bg-color-primary;
-}
-
 img {
   max-width: 100%;
   height: auto;

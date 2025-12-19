@@ -1,7 +1,13 @@
 // .newsletter {}
-// .newsletter__title {}
+.newsletter__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
 .newsletter__description {
   @include font-some-params($font-secondary, 16px, 24px);
+  margin: 0;
+  margin-bottom: 24px;
   color: $text-color-secondary;
 }
 // .newsletter__form {}

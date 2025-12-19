@@ -1,5 +1,10 @@
 // .catalog {}
-// .catalog__title {}
+.catalog__title {
+  margin-bottom: 40px;
+  padding: 27px 20px 0;
+}
 // .catalog__main-content {}
 // .catalog__additional-content {}
-// .catalog__newsletter {}
+.catalog__newsletter {
+  padding: 20px 20px 40px;
+}

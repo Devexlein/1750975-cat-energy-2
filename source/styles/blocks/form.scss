@@ -1,3 +1,10 @@
 // .form {}
-// .form__input {}
-// .form__button {}
+.form__input {
+  margin-bottom: 16px;
+}
+
+.form__button {
+  @include font-some-params($font-secondary, 20px, 26px);
+  padding: 15px;
+  width: 100%;
+}

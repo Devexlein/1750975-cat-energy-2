@@ -1,6 +1,22 @@
 .page {
   height: 100%;
 }
+
+.page__body {
+  @include font-some-params;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  font-weight: 400;
+  font-style: normal;
+  color: $text-color-primary;
+  background-color: $bg-color-primary;
+}
+
 // .page__header {}
-// .page__main {}
+.page__main {
+  flex-grow: 1;
+}
 // .page__footer {}

@@ -1,10 +1,14 @@
-@mixin font-face($family, $weight, $style, $src) {
+@mixin font-face($family, $weight, $style, $src-woff2, $src-woff) {
   @font-face {
     font-family: $family;
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
-    src: $src format("woff2");
+    // src: $src format("woff2");
+    src:
+      local($family),
+      $src-woff2 format("woff2"),
+      $src-woff format("woff");
   }
 }
 
@@ -19,6 +23,12 @@
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
+}
+
+@mixin bg-some-params($bg-color: $bg-color-basis, $bg-position: center, $bg-repeat: no-repeat) {
+  background-color: $bg-color;
+  background-position: $bg-position;
+  background-repeat: $bg-repeat;
 }
 
 @mixin button {
@@ -36,4 +46,11 @@
   color: $text-color-secondary;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@mixin center-flex($justify-content: center, $direction: row) {
+  justify-content: $justify-content;
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
 }
