@@ -2,12 +2,36 @@
   padding: 27px 20px 0;
   color: $text-color-basis;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 0;
+    display: grid;
+    grid-template-columns: minmax(30px, 1fr) 510px minmax(calc(100vw - 570px), 1fr) minmax(30px, 1fr);
+    color: $text-color-secondary;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+    padding-top: 30px;
+  }
 }
 
 .hero__title {
   margin: 0;
   margin-bottom: 25px;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding-left: 90px;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+    padding-left: 80px;
+  }
 }
 
 .hero__slogan {
@@ -15,8 +39,56 @@
   margin: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding-left: 90px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-left: 80px;
+  }
 }
-// .hero__image  {}
+
+.hero__image-wrap {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    place-self: center end;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -60px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    place-self: start start;
+  }
+}
+
 .hero__link-button {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 30px 0 0 90px;
+    padding: 14px 26px;
+    display: inline-grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    place-self: start start;
+    z-index: 2;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 80px;
+  }
 }

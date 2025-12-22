@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    column-gap: 42px;
+  }
 }
 
 .infographic__item {
@@ -22,6 +27,10 @@
   text-transform: uppercase;
   border: 1px solid $border-color-basis;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .infographic__note {
@@ -29,4 +38,13 @@
   padding: 0 15px;
   width: min-content;
   background-color: $bg-color-secondary-darken;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    background-color: $bg-color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-color-secondary-darken;
+  }
 }

@@ -13,6 +13,11 @@
   font-style: normal;
   color: $text-color-primary;
   background-color: $bg-color-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 // .page__header {}

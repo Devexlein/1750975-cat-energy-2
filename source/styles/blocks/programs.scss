@@ -1,8 +1,28 @@
 .programs {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
 }
 
 .programs__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
-// .programs__item {}
+
+.programs__item {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
