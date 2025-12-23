@@ -1,7 +1,7 @@
 .address {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: minmax(30px, 1fr) 565px minmax(1280px - 625px, 1fr) minmax(30px, 1fr);
+    grid-template-columns: 1fr 565px 655px 1fr;
     grid-template-rows: 95px 1fr 105px;
   }
 }
@@ -49,14 +49,8 @@
   margin: 0;
   max-width: 160px;
   line-height: 20px;
-  letter-spacing: -0.1px;
-
-  @media (min-width: 375px) {
-    letter-spacing: 0;
-  }
 
   @media (min-width: $tablet-width) {
-    letter-spacing: 0;
     text-align: right;
   }
 

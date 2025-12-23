@@ -3,7 +3,7 @@
   background-color: $bg-color-secondary-darken;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 100px;
+    padding: 25px 30px 100px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 42px;
@@ -71,11 +71,13 @@
     margin-bottom: 0;
     justify-self: end;
     font-size: 20px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     justify-self: start;
+    text-align: start;
   }
 }
 
