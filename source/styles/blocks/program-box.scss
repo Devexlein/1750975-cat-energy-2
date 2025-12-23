@@ -117,8 +117,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 450px;
+    column-gap: 25px;
     font-size: 20px;
     line-height: 30px;
-    column-gap: 25px;
   }
 }

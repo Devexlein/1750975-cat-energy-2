@@ -6,18 +6,54 @@
   background-size: 30px 30px;
   border-top: 1px solid $bg-color-secondary-hover;
   border-bottom: 1px solid $bg-color-secondary-hover;
+
+  @media (min-width: $tablet-width) {
+    padding: 156px 37px 40px;
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: end;
+    row-gap: 20px;
+    background-size: 60px 60px;
+    border: 2px solid $bg-color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 154px;
+    width: 245px;
+  }
 }
 
 .products-show-more__title {
   @include font-some-params($font-secondary, 16px, 20px);
   margin: 0;
   margin-bottom: 8px;
+  color: $text-color-secondary-lighter;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 170px;
+  }
 }
 
 .products-show-more__description {
   @include font-some-params($font-primary, 12px, 16px);
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 170px;
+  }
 }
-// .products-show-more__button {}
+
+.products-show-more__button {
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+  }
+}

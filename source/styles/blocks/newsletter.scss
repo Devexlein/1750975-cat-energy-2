@@ -2,6 +2,14 @@
 .newsletter__title {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .newsletter__description {
@@ -9,5 +17,14 @@
   margin: 0;
   margin-bottom: 24px;
   color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 24px;
+    max-width: clamp(632px, 85%, 752px);
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
+
 // .newsletter__form {}

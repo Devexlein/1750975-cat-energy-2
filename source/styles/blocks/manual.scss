@@ -1,7 +1,5 @@
 .manual {
-  margin: 0 auto;
   padding: 20px 20px 50px;
-  max-width: 1280px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 50px;
@@ -26,7 +24,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    // grid-template-columns: repeat(auto, 1fr);
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 37px 77px;
     justify-content: start;
@@ -36,9 +33,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
   }
-  // @media (min-width: $desktop-width) {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
 }
 
 .manual__item:not(:last-child) {
