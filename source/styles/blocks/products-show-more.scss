@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: end;
     row-gap: 20px;
     background-size: 60px 60px;
     border: 2px solid $bg-color-secondary;
@@ -54,6 +53,7 @@
 
 .products-show-more__button {
   @media (min-width: $tablet-width) {
+    margin-top: auto;
     align-self: stretch;
   }
 }

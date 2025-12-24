@@ -15,4 +15,9 @@
     gap: 60px 80px;
   }
 }
-// .main-catalog__item {}
+
+.main-catalog__item.products-show-more {
+  @media (min-width: $tablet-width) {
+    margin-top: 81px;
+  }
+}
