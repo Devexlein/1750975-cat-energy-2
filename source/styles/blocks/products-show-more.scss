@@ -1,21 +1,41 @@
 .products-show-more {
-  @include bg-some-params(transparent, top 25px center);
+  position: relative;
   padding: 78px 20px 25px;
   text-align: center;
-  background-image: url("../../icons/stack.svg#icon-plus");
-  background-size: 30px 30px;
   border-top: 1px solid $bg-color-secondary-hover;
   border-bottom: 1px solid $bg-color-secondary-hover;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 39px;
+    transform: translate(-50%, 50%);
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: translate(-50%, 50%) rotate(90deg);
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 156px 37px 40px;
+    padding: 160px 37px 40px;
     width: 324px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    background-size: 60px 60px;
     border: 2px solid $bg-color-secondary;
+
+    &::before,
+    &::after {
+      top: 80px;
+      width: 60px;
+    }
   }
 
   @media (min-width: $desktop-width) {
