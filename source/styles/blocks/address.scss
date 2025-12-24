@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 565px 655px 1fr;
     grid-template-rows: 95px 1fr 105px;
+    min-height: 400px;
   }
 }
 
@@ -26,7 +27,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    align-content: center;
+    align-self: start;
     z-index: 2;
     background-color: $bg-color-primary;
   }
@@ -79,7 +80,6 @@
   background-position: center;
 
   @media (min-width: 500px) {
-    height: 400px;
     background-image:
       image-set(
         url("../../images/map/map-bg-tablet@2x.jpg") type("image/jpg") 2x,
@@ -90,6 +90,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    height: 100%;
     background-image:
       image-set(
         url("../../images/map/map-bg-desktop@2x.jpg") type("image/jpg") 2x,

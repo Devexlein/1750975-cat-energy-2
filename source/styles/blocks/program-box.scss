@@ -20,6 +20,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 53px 53px;
+    display: flex;
+    flex-direction: column;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -83,6 +85,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
     max-width: 100%;
+    flex-grow: 1;
   }
 }
 

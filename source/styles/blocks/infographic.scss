@@ -14,7 +14,6 @@
 .infographic__item {
   @include center-flex (center, column);
   @include font-some-params($font-primary, 12px, 12px);
-  width: 162px;
   min-height: 56px;
   gap: 9px;
   text-align: center;
