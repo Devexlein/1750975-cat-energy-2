@@ -26,8 +26,10 @@
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
       </a>
 
-      <nav class="main-header__nav main-nav">
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+      <!-- Модификатор для открытого меню - opened, закрытого - closed -->
+      <!-- Если JS у пользователя выключен, модификатор - nojs -->
+      <nav class="main-header__nav main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
