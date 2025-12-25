@@ -55,7 +55,7 @@
     text-align: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
@@ -96,5 +96,21 @@
         url("../../images/map/map-bg-desktop@2x.jpg") type("image/jpg") 2x,
         url("../../images/map/map-bg-desktop@1x.jpg") type("image/jpg") 1x
       );
+  }
+}
+
+.address__map-iframe {
+  display: block;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: 100%;
   }
 }
