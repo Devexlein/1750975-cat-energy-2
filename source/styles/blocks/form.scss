@@ -23,10 +23,5 @@
   @media (min-width: $tablet-width) {
     flex-shrink: 0;
     width: 256px;
-    background-color: #e5e5e5;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $bg-color-basis;
   }
 }

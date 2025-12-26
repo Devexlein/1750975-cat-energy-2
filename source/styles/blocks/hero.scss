@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding: 27px 20px 0;
   color: $text-color-basis;
   text-align: center;
@@ -15,6 +16,44 @@
     margin-bottom: 134px;
     padding: 30px 0 0;
     grid-template-columns: 1fr 510px 710px 1fr;
+  }
+
+  &::before {
+    @include bg-some-params($bg-color-basis, center 0);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 302px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 0 100%),
+      image-set(
+        url("../../images/hero/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
+        url("../../images/hero/hero-bg-mobile@1x.jpg") type("image/jpg") 1x
+      ),
+      linear-gradient(to right, #4f4f55 50%, #434248 50%);
+
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -120px;
+      right: 0;
+      height: 694px;
+      background-image:
+        linear-gradient(to right, $bg-color-primary 50%, rgba(104, 183, 56, 0.85) 50%),
+        image-set(
+          url("../../images/hero/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
+          url("../../images/hero/hero-bg-desktop@1x.jpg") type("image/jpg") 1x
+        ),
+        linear-gradient(to right, $bg-color-primary 50%, #4d4c50 50%, #3e3d41 70%);
+      background-repeat: no-repeat;
+      background-position: 0 0, top left calc(50vw - 25px), 0 0;
+    }
   }
 }
 

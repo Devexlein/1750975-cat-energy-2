@@ -4,6 +4,16 @@
       display: none;
     }
 
+    &--opened .main-nav__list {
+      padding: 0;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      background-color: $bg-color-primary;
+      z-index: 2;
+    }
+
     &--opened .main-nav__toggle {
       background-image: url("../../icons/stack.svg#menu-close");
       background-size: 20px 20px;
@@ -44,11 +54,6 @@
     opacity: 0.3;
   }
 
-  // &--closed {
-  //   background-image: url("../../icons/stack.svg#menu-close");
-  //   background-size: 20px 20px;
-  // }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -68,6 +73,14 @@
   @media (min-width: $desktop-width) {
     max-width: 600px;
     flex-shrink: 0;
+
+    &--bg .main-nav__link {
+      color: $text-color-basis;
+    }
+
+    &--bg .main-nav__link--current::after {
+      background-color: $bg-color-primary;
+    }
   }
 }
 
