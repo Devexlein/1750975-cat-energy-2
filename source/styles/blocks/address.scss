@@ -1,4 +1,12 @@
-// .address {}
+.address {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 565px 655px 1fr;
+    grid-template-rows: 95px 1fr 105px;
+    min-height: 400px;
+  }
+}
+
 .address__content-wrap {
   @include center-flex(space-between);
   padding: 26px 15px;
@@ -7,21 +15,58 @@
   &--bg-primary {
     background-color: $bg-color-primary;
   }
+
+  @media (min-width: 335px) {
+    padding: 26px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
+    z-index: 2;
+    background-color: $bg-color-primary;
+  }
 }
 
 .address__text {
   @include font-some-params($font-secondary, 16px, 20px);
   margin: 0;
+  max-width: 170px;
   color: $text-color-secondary-lighter;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__location {
   margin: 0;
-  letter-spacing: -0.1px;
+  max-width: 160px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 // .address__location-street {}
-// .address__location-city {}
+.address__location-city {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    display: block;
+  }
+}
+
 .address__map {
   width: 100%;
   height: 362px;
@@ -41,5 +86,31 @@
         url("../../images/map/map-bg-tablet@1x.jpg") type("image/jpg") 1x
       );
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: 100%;
+    background-image:
+      image-set(
+        url("../../images/map/map-bg-desktop@2x.jpg") type("image/jpg") 2x,
+        url("../../images/map/map-bg-desktop@1x.jpg") type("image/jpg") 1x
+      );
+  }
 }
-// .address__map-image {}
+
+.address__map-iframe {
+  display: block;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    height: 100%;
+  }
+}

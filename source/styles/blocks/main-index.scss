@@ -1,1 +1,17 @@
 // .main-index {}
+
+// .main-index__hero {}
+
+.main-index__programs {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+.main-index__manual {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+// .main-index__example {}
