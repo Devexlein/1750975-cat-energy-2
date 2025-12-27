@@ -17,6 +17,7 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+
 // слайдер сравнения до и после
 const container = document.querySelector('.compare-slider');
 document.querySelector('.compare-slider__range-handle').addEventListener('input', (e) => {

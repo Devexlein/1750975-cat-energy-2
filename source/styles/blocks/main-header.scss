@@ -1,14 +1,7 @@
 .main-header {
   @media (max-width: $mobile-width-only) {
-    position: relative;
-    height: 66px;
     border-bottom: 1px solid #d9d9d9;
   }
-}
-
-.main-header__content {
-  padding: 13px 20px 0;
-  max-width: 1280px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 30px 0;
@@ -21,10 +14,13 @@
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding-top: 55px;
+    width: 1280px;
   }
 }
 
 .main-header__logo {
+  margin-bottom: 14px;
+  padding-left: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +28,7 @@
   width: 50vw;
 
   & .logo__text {
-    transform: translate(25%);
+    transform: translate(50%);
 
     @media (min-width: $tablet-width) {
       transform: none;
@@ -44,8 +40,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     width: fit-content;
     column-gap: 13px;
   }
 }
-// .main-header__nav {}
+
+.main-header__nav {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}

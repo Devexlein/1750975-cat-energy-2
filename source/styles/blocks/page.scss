@@ -20,7 +20,12 @@
   }
 }
 
-// .page__header {}
+.page__header {
+  padding-top: 13px;
+  flex-shrink: 0;
+  position: relative;
+}
+
 .page__main {
   flex-grow: 1;
 
