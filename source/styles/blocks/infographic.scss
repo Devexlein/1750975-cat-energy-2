@@ -17,6 +17,11 @@
   min-height: 56px;
   gap: 9px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .infographic__number {
@@ -41,10 +46,14 @@
   background-color: $bg-color-secondary-darken;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
-    width: 128px;
+    padding: 0 8px;
+    width: 142px;
     word-wrap: break-word;
     background-color: $bg-color-primary;
+
+    &--short {
+      max-width: 115px;
+    }
   }
 
   @media (min-width: $desktop-width) {
