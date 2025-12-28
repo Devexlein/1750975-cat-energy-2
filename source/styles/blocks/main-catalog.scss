@@ -25,16 +25,8 @@
 }
 
 .main-catalog__item {
-  @media (max-width: $mobile-width-only) {
-    padding: 20px 0 25px;
-
-    &--show-more {
-      padding-top: 78px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    &--show-more {
+    &--more {
       margin-top: 81px;
     }
   }

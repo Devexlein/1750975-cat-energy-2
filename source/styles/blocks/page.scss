@@ -21,9 +21,9 @@
 }
 
 .page__header {
-  padding-top: 13px;
-  flex-shrink: 0;
-  position: relative;
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .page__main {

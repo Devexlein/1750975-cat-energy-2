@@ -1,5 +1,7 @@
 .main-header {
   @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding-top: 13px;
     border-bottom: 1px solid #d9d9d9;
   }
 
@@ -47,6 +49,10 @@
 }
 
 .main-header__nav {
+  @media (max-width: $mobile-width-only) {
+    margin-top: -1px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
   }

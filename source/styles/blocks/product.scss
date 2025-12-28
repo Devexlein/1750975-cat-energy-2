@@ -43,6 +43,14 @@
     grid-column: 2 / span 2;
   }
 
+  @media (max-width: $mobile-width-only) {
+    padding: 20px 0 25px;
+
+    &--more {
+      padding-top: 78px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
     width: 324px;
@@ -167,6 +175,7 @@
   }
 }
 // .product__specification-note {}
+
 .product__specification-value {
   margin: 0;
 }
