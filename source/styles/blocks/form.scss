@@ -1,10 +1,28 @@
-// .form {}
+.form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .form__input {
   margin-bottom: 16px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    max-width: clamp(376px, 50%, 496px);
+    flex-grow: 0;
+  }
 }
 
 .form__button {
   @include font-some-params($font-secondary, 20px, 26px);
   padding: 15px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    width: 256px;
+  }
 }

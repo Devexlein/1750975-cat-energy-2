@@ -4,7 +4,6 @@
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
-    // src: $src format("woff2");
     src:
       local($family),
       $src-woff2 format("woff2"),
