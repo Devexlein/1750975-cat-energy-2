@@ -1,5 +1,4 @@
 .additional-product {
-  padding: 13px 0 19px;
   border-top: 1px solid $border-color-basis;
 
   &:last-child {
@@ -7,7 +6,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-left: 1px solid $border-color-basis;
@@ -15,7 +13,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
     grid-template-columns: 1fr 285px 244px;
     column-gap: 40px;
     align-items: center;
@@ -49,6 +46,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
     justify-self: end;

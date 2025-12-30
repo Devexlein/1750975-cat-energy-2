@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 565px 655px 1fr;
     grid-template-rows: 95px 1fr 105px;
-    min-height: 400px;
   }
 }
 
@@ -21,6 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 60px 75px 60px 80px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: start;
@@ -55,7 +55,6 @@
     text-align: start;
   }
 }
-// .address__location-street {}
 
 .address__location-city {
   @media (min-width: $tablet-width) {

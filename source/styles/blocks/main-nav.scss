@@ -1,8 +1,6 @@
 .main-nav {
   @media (max-width: $mobile-width-only) {
-    width: 100%;
     background-color: $bg-color-primary;
-    z-index: 3;
 
     &--nojs .main-nav__toggle {
       display: none;
@@ -19,7 +17,7 @@
 
     &--opened .main-nav__list {
       position: absolute;
-      top: 65px;
+      top: 64px;
       left: 0;
       background-color: $bg-color-primary;
     }
@@ -34,7 +32,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 12px;
-  right: 10px;
+  right: 13px;
   z-index: 2;
 
   width: 40px;
@@ -70,7 +68,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 10px 33px;
+    gap: 10px 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,7 +123,7 @@
     font-size: 18px;
     line-height: 24px;
 
-    &--current.main-nav__link {
+    &--current {
       padding-bottom: 0;
       pointer-events: none;
     }
@@ -133,7 +131,7 @@
     &--current::after {
       content: "";
       display: block;
-      margin-top: 8px;
+      margin-top: 6px;
       height: 2px;
       background-color: $bg-color-basis;
     }

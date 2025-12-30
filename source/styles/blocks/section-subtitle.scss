@@ -1,7 +1,5 @@
 .section-subtitle {
   @include font-some-params($font-secondary, 24px, 24px);
-  position: relative;
-  width: fit-content;
   color: $text-color-secondary;
   background-color: $bg-color-primary;
   box-shadow: -40px 0 0 0 $bg-color-primary, 40px 0 0 0 $bg-color-primary;
@@ -9,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 0;
     width: 100vw;
     height: 2px;
@@ -19,14 +17,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
     box-shadow: 0 0 0 0 $bg-color-primary, 40px 0 0 0 $bg-color-primary;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     font-size: 40px;
     line-height: 40px;
     box-shadow: -40px 0 0 0 $bg-color-primary, 40px 0 0 0 $bg-color-primary;

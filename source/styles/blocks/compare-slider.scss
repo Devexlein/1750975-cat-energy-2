@@ -1,12 +1,21 @@
 .compare-slider {
   --js-position: 50%;
 
-  position: relative;
   display: grid;
   place-content: center;
-  width: max-content;
   color: $bg-color-dark;
   transition: color 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / span 4;
+    place-self: start end;
+  }
 }
 
 .compare-slider:hover,
