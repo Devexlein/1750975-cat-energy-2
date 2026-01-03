@@ -56,6 +56,8 @@
   background-color: $bg-color-basis;
   background-image:
     image-set(
+      url("../../images/additional-catalog/box-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/additional-catalog/box-bg-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/additional-catalog/box-bg-mobile@2x.jpg") type("image/jpg") 2x,
       url("../../images/additional-catalog/box-bg-mobile@1x.jpg") type("image/jpg") 1x
     );
@@ -81,6 +83,8 @@
     text-align: start;
     background-image:
       image-set(
+        url("../../images/additional-catalog/box-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/additional-catalog/box-bg-tablet@1x.webp") type("image/webp") 1x,
         url("../../images/additional-catalog/box-bg-tablet@2x.jpg") type("image/jpg") 2x,
         url("../../images/additional-catalog/box-bg-tablet@1x.jpg") type("image/jpg") 1x
       );
@@ -100,6 +104,8 @@
     text-align: center;
     background-image:
       image-set(
+        url("../../images/additional-catalog/box-bg-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/additional-catalog/box-bg-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/additional-catalog/box-bg-desktop@2x.jpg") type("image/jpg") 2x,
         url("../../images/additional-catalog/box-bg-desktop@1x.jpg") type("image/jpg") 1x
       );
