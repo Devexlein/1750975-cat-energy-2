@@ -30,4 +30,16 @@
   }
 }
 
-// .newsletter__form {}
+.newsletter__form .form__input {
+  margin-bottom: 16px;
+  padding: 12px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.newsletter__form .form__button {
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+}

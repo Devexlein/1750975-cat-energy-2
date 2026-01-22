@@ -4,6 +4,15 @@
   background-color: $bg-color-primary;
   box-shadow: -40px 0 0 0 $bg-color-primary, 40px 0 0 0 $bg-color-primary;
 
+  &--short {
+    max-width: 190px;
+
+    @media (min-width: 400px) {
+      max-width: 100%;
+    }
+  }
+
+
   &::before {
     content: "";
     position: absolute;

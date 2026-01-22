@@ -1,0 +1,16 @@
+// .program-selection {}
+.program-selection__title {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0 20px;
+}
+
+.program-selection__description {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  font-family: $font-secondary;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
