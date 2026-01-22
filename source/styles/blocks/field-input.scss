@@ -3,7 +3,12 @@
   padding: 13px 15px;
   color: inherit;
   text-transform: uppercase;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $border-color-basis;
+
+  &[type="text"],
+  &[type="number"] {
+    border-color: $border-color-lighter;
+  }
 
   &:hover {
     border-color: $border-color-basis;

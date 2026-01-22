@@ -30,9 +30,37 @@
 }
 
 .form__group-item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
+
+  &--img-email .field-input,
+  &--img-phone .field-input {
+    padding-right: 40px;
+  }
+
+  &--img-email::after,
+  &--img-phone::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: $text-color-secondary;
+    mask-repeat: no-repeat;
+    mask-size: 20px 20px;
+    mask-position: center right;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &--img-email::after {
+    mask-image: url("../../icons/stack.svg#email-stroke");
+  }
+
+  &--img-phone::after {
+    mask-image: url("../../icons/stack.svg#phone-stroke");
+  }
 }
 
 .form__group-item:has(.control-input) {
@@ -43,18 +71,12 @@
   margin-bottom: 14px;
 }
 
-.form__input,
-.form__comment-field {
+.form__input {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    max-width: clamp(376px, 50%, 496px);
-    flex-grow: 0;
-  }
 }
 
 .form__comment-field {
+  width: 100%;
   min-height: 150px;
 }
 
@@ -64,8 +86,9 @@
   width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
-    flex-shrink: 0;
-    width: 256px;
+    // margin-top: 0;
+    // flex-shrink: 0;
+    // width: 256px;
   }
 }
 

@@ -97,20 +97,20 @@
       <fieldset class="form__group">
         <legend class="form__group-title section-subtitle--short section-subtitle">Контактные данные (владельца кота)</legend>
         <ul class="form__group-list">
-          <li class="form__group-item">
+          <li class="form__group-item form__group-item--img-email">
             <label class="form__label field-label" for="cat-owner-email">E-mail:*</label>
             <!-- Если поле заполнено неверно, добавить к field-input модификатор invalid -->
             <input class="form__input field-input" id="cat-owner-email" type="email" name="cat-owner-email" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li class="form__group-item">
-            <label class="form__label field-label" for="cat-owner-tel">Телефон:*</label>
-            <input class="form__input field-input" id="cat-owner-tel" type="tel" name="cat-owner-tel" placeholder="8 (960) 900-60-90" required>
+          <li class="form__group-item form__group-item--img-phone">
+            <label class="form__label field-label" for="cat-owner-phone">Телефон:*</label>
+            <input class="form__input field-input" id="cat-owner-phone" type="tel" name="cat-owner-phone" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title section-subtitle">Комментарий</legend>
-        <textarea class="form__comment-field field-input" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__comment-field field-input" id="comment" type="text" name="comment">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title section-subtitle">Дополнительно</legend>
