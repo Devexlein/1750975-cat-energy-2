@@ -30,10 +30,14 @@
 }
 
 .form__group-item {
-  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
+
+  &--img-email,
+  &--img-phone {
+    position: relative;
+  }
 
   &--img-email .field-input,
   &--img-phone .field-input {
@@ -51,7 +55,7 @@
     mask-repeat: no-repeat;
     mask-size: 20px 20px;
     mask-position: center right;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   &--img-email::after {
@@ -61,14 +65,40 @@
   &--img-phone::after {
     mask-image: url("../../icons/stack.svg#phone-stroke");
   }
-}
 
-.form__group-item:has(.control-input) {
-  gap: 15px;
-}
+  &--img-email:focus-within::after,
+  &--img-phone:focus-within::after {
+    background-color: $bg-color-basis;
+  }
 
-.form__group-item:not(:last-child) {
-  margin-bottom: 14px;
+  &--img-email:has(.field-input:user-invalid)::after,
+  &--img-phone:has(.field-input:user-invalid)::after,
+  &--img-email:has(.field-input:--invalid)::after,
+  &--img-phone:has(.field-input:--invalid)::after {
+    background-color: $border-color-error;
+  }
+
+  &:hover .field-input {
+    border-color: $border-color-basis;
+  }
+
+  &:hover .field-label {
+    color: $text-color-secondary-lighter;
+  }
+
+  &:has(.control-input) {
+    gap: 15px;
+  }
+
+  &:has(.control-input:disabled) {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: auto;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
 .form__input {
@@ -78,6 +108,10 @@
 .form__comment-field {
   width: 100%;
   min-height: 150px;
+
+  &[name="comment"] {
+    border-color: $border-color-lighter;
+  }
 }
 
 .form__button {
