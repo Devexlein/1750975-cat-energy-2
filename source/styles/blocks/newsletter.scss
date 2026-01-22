@@ -30,6 +30,13 @@
   }
 }
 
+.newsletter__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .newsletter__form .form__input {
   margin-bottom: 16px;
   width: 100%;

@@ -1,9 +1,4 @@
-.form {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-  }
-}
+// .form {}
 
 .form__group {
   margin: 0;
@@ -15,6 +10,11 @@
     padding: 20px;
     border-top: 1px solid $border-color-darken;
     border-bottom: 1px solid $border-color-darken;
+
+    @media (min-width: $tablet-width) {
+      padding: 23px 27px 27px;
+      border: 1px solid $border-color-darken;
+    }
   }
 }
 
@@ -23,6 +23,11 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__group-list {
@@ -88,6 +93,18 @@
 
   &:has(.control-input) {
     gap: 15px;
+
+    @media (min-width: $tablet-width) {
+      gap: 13px 20px;
+    }
+  }
+
+  &:not(:has(.control-input)) .field-label {
+    max-width: 50vw;
+  }
+
+  &:has(.control-input) .field-label {
+    max-width: 80vw;
   }
 
   &:has(.control-input:disabled) {
@@ -98,6 +115,10 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 

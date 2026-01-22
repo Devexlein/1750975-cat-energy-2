@@ -10,6 +10,11 @@
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   &[type="radio"] {
     border-radius: 50%;
   }
@@ -31,6 +36,11 @@
     background-color: $bg-color-basis;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &[type="checkbox"]:checked::before {
@@ -39,6 +49,12 @@
     border-left: 1.5px solid $bg-color-basis;
     border-bottom: 1.5px solid $bg-color-basis;
     transform: translate(-50%, -75%) rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 12px;
+      border-width: 2px;
+    }
   }
 
   &:hover {

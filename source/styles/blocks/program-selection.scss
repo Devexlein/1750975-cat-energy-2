@@ -1,8 +1,24 @@
-// .program-selection {}
+.program-selection {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
+.program-selection .section-subtitle {
+  @media (min-width: $tablet-width) {
+    box-shadow: -40px 0 0 0 $bg-color-primary, 40px 0 0 0 $bg-color-primary;
+  }
+}
+
 .program-selection__title {
   margin: 0;
   margin-bottom: 37px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding: 0 40px;
+  }
 }
 
 .program-selection__description {
@@ -13,4 +29,19 @@
   color: $text-color-secondary;
   text-transform: uppercase;
   text-wrap: balance;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0 40px;
+    max-width: 80vw;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-selection__form {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding: 0 40px;
+  }
 }
