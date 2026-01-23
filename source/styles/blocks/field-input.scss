@@ -10,6 +10,16 @@
     border-color: $border-color-lighter;
   }
 
+  &[type="number"] {
+    appearance: textfield;    /* отключить стрелки в Firefox  */
+  }
+
+  /* отключить стрелки в других браузерах  */
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
   &:hover {
     border-color: $border-color-basis;
   }
