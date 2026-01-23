@@ -16,6 +16,16 @@
       border: 1px solid $border-color-darken;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    padding: 0;
+
+    &:has(.control-input[type="checkbox"]) {
+      margin-top: -5px;
+      margin-bottom: 52px;
+    }
+  }
 }
 
 .form__group-title {
@@ -23,15 +33,38 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
+  box-shadow: -40px 0 #ffffff, 20px 0 #ffffff;
+
+  &::before {
+    top: 60%;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 77px;
     font-size: 36px;
     line-height: 36px;
+    box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;
   }
 }
 
 .form__group-list {
   @include list-reset;
+
+  &:has(.control-input[type="radio"]) {
+    @media (min-width: $tablet-width) {
+      margin-top: 7px;
+      padding: 23px 27px 27px;
+    }
+  }
+
+  &:has(.control-input[type="checkbox"]) {
+    @media (min-width: $tablet-width) {
+      margin-top: -20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 60px;
+    }
+  }
 }
 
 .form__group-item {
@@ -118,6 +151,14 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
+
+      &:has(.control-input[type="radio"]) {
+        margin-bottom: 13px;
+      }
+
+      &:has(.control-input[type="checkbox"]) {
+        margin: 0;
+      }
     }
   }
 }
@@ -134,17 +175,25 @@
   &[name="comment"] {
     border-color: $border-color-lighter;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    height: 175px;
+  }
 }
 
 .form__button {
   margin: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
-    // margin-top: 0;
-    // flex-shrink: 0;
-    // width: 256px;
+    margin: 0;
+    padding: 14px;
+    display: inline-block;
+    max-width: 284px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -153,4 +202,10 @@
   margin-bottom: 32px;
   color: $text-color-secondary;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 60px;
+    display: inline-block;
+  }
 }
