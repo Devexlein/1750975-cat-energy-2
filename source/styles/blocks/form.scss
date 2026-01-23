@@ -129,6 +129,7 @@
 .form__comment-field {
   width: 100%;
   min-height: 150px;
+  resize: vertical;
 
   &[name="comment"] {
     border-color: $border-color-lighter;
