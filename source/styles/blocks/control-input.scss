@@ -46,14 +46,13 @@
   &[type="checkbox"]:checked::before {
     width: 17px;
     height: 10px;
-    border-left: 1.5px solid $bg-color-basis;
-    border-bottom: 1.5px solid $bg-color-basis;
+    border-left: 2px solid $bg-color-basis;
+    border-bottom: 2px solid $bg-color-basis;
     transform: translate(-50%, -75%) rotate(-45deg);
 
     @media (min-width: $tablet-width) {
       width: 22px;
       height: 12px;
-      border-width: 2px;
     }
   }
 
