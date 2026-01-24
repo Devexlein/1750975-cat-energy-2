@@ -19,6 +19,10 @@
     margin-bottom: 54px;
     padding: 0 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .program-selection__description {
@@ -37,11 +41,30 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    max-width: 340px;
+  }
 }
 
 .program-selection__form {
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 69px 75px;
+    grid-template-areas:
+      "cat          program"
+      "owner        owner"
+      "comment      comment"
+      "additionally additionally"
+      "button       note";
   }
 }
