@@ -165,11 +165,11 @@
   }
 
   &:not(:has(.control-input)) .field-label {
-    max-width: 50vw;
+    max-width: 50%;
   }
 
   &:has(.control-input) .field-label {
-    max-width: 80vw;
+    max-width: 85%;
   }
 
   &:has(.control-input:disabled) {
@@ -229,6 +229,7 @@
   margin: auto;
   margin-top: 5px;
   width: calc(100% - 40px);
+  hyphens: auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -259,12 +260,14 @@
     margin: 0;
     margin-left: 60px;
     display: inline-block;
+    max-width: 40%;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-top: -45px;
     grid-area: note;
+    max-width: none;
     text-align: start;
   }
 }
