@@ -1,0 +1,62 @@
+.control-input {
+  position: relative;
+  appearance: none;
+  margin: 0;
+  flex-shrink: 0;
+  order: -1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-basis;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &[type="radio"] {
+    border-radius: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+
+  &[type="radio"]:checked::before {
+    width: 13px;
+    height: 13px;
+    background-color: $bg-color-basis;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &[type="checkbox"]:checked::before {
+    width: 17px;
+    height: 10px;
+    border-left: 2px solid $bg-color-basis;
+    border-bottom: 2px solid $bg-color-basis;
+    transform: translate(-50%, -75%) rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 12px;
+    }
+  }
+
+  &:hover {
+    border-color: $border-color-hover;
+  }
+}
